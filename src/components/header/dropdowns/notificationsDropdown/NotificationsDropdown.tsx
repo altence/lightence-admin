@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { Dropdown } from 'antd';
 import { BellOutlined } from '@ant-design/icons';
-import { NotificationsOverlay } from './NotificationsOverlay/NotificationsOverlay';
+import { NotificationsOverlay, NotificationType } from './NotificationsOverlay/NotificationsOverlay';
 import { Badge } from 'components/common/Badge/Badge';
-import { notifications as fetchedNotifications, Notification } from 'api/notifications.api';
 import { DropdownHeader } from '../../Header/Header.styles';
 
 export const NotificationsDropdown: React.FC = () => {
-  const [notifications, setNotifications] = useState<Notification[]>(fetchedNotifications);
+  const [notifications, setNotifications] = useState<NotificationType[]>([]);
 
   return (
     <Dropdown

@@ -5,7 +5,6 @@ import { Col, Row, Space } from 'antd';
 import { Link } from 'react-router-dom';
 import { Notification } from 'components/common/Notification/Notification';
 import { capitalize } from 'utils/utils';
-import { Mention, Notification as NotificationType } from 'api/notifications.api';
 import { notificationsSeverities } from 'constants/notificationsSeverities';
 import * as S from './NotificationsOverlay.styles';
 
@@ -13,6 +12,20 @@ interface NotificationsOverlayProps {
   notifications: NotificationType[];
   setNotifications: (state: NotificationType[]) => void;
 }
+
+export interface Message {
+  id: number;
+  description: string;
+}
+
+export interface Mention extends Message {
+  userName: string;
+  userIcon: string;
+  place: string;
+  href: string;
+}
+
+export type NotificationType = Mention | Message;
 
 export const NotificationsOverlay: React.FC<NotificationsOverlayProps> = ({ notifications, setNotifications }) => {
   const { t } = useTranslation();

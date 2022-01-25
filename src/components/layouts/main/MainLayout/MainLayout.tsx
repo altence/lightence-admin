@@ -1,25 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Header } from '../../../header/Header/Header';
 import MainSider from '../sider/MainSider/MainSider';
 import MainContent from '../MainContent/MainContent';
 import { MainHeader } from '../MainHeader/MainHeader';
 import * as S from './MainLayout.styles';
-import { Outlet, useLocation } from 'react-router-dom';
-import { DASHBOARD_PATH } from '@app/components/router/AppRouter';
-import { useResponsive } from '@app/hooks/useResponsive';
-import { References } from '@app/components/common/References/References';
+import { Outlet } from 'react-router-dom';
 
 const MainLayout: React.FC = () => {
-  const [isTwoColumnsLayout, setIsTwoColumnsLayout] = useState(true);
+  const [isTwoColumnsLayout] = useState(false);
   const [siderCollapsed, setSiderCollapsed] = useState(true);
-  const { isDesktop } = useResponsive();
-  const location = useLocation();
 
   const toggleSider = () => setSiderCollapsed(!siderCollapsed);
-
-  useEffect(() => {
-    setIsTwoColumnsLayout([DASHBOARD_PATH].includes(location.pathname) && isDesktop);
-  }, [location.pathname, isDesktop]);
 
   return (
     <S.LayoutMaster>
@@ -32,7 +23,6 @@ const MainLayout: React.FC = () => {
           <div>
             <Outlet />
           </div>
-          {!isTwoColumnsLayout && <References />}
         </MainContent>
       </S.LayoutMain>
     </S.LayoutMaster>
