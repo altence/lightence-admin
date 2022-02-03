@@ -104,8 +104,6 @@
       "disable": "Disable",
       "disabled": "Disabled",
       "disabledCheckbox": "Disabled checkbox",
-      "enable": "Enable",
-      "enabled": "Enabled",
       "group": "Checkbox group",
       "orange": "Orange",
       "pear": "Pear",
@@ -227,11 +225,15 @@
       "twoFactorAuthPage": "Two-Factor auth page",
       "ui": "UI Components",
       "upload": "Upload",
-      "verifCodeSent": "We have sent a verification code to your email",
+      "verifCodeSent": "We have sent a verification code to your {{option}}",
       "verifyEmailPage": "Verify email page",
       "warning": "Warning",
       "zipcode": "Zipcode",
-      "delete":"Delete"
+      "delete":"Delete",
+      "verify": "Verify",
+      "notVerified": "Not verified",
+      "enable": "Enable",
+      "enabled": "Enabled"
   },
   "dashboard": {
       "activity": {
@@ -672,7 +674,6 @@
               "nickname": "Nickname",
               "notValidEmail": "Please input a valid email address!",
               "notValidWebsite": "Please input a valid URL!",
-              "notVerified": "Not verified",
               "otherInfo": "Other info",
               "sex": "Sex",
               "socialLinks": "Social links",
@@ -692,7 +693,8 @@
               "samePassword": "Your new password can't be same as previous password",
               "title": "Security settings",
               "twoFactorAuth": "Two–factor authentication",
-              "verify": "Verify"
+              "enableTwoFactorAuth": "Are you sure you want to enable two-factor authentication?",
+              "disableTwoFactorAuth": "Are you sure you want to disable two-factor authentication?"
           }
       },
       "title": "Profile"
@@ -740,7 +742,7 @@
   },
   "securityCodeForm": {
       "noCode": "Didn't get a verification code?",
-      "title": "Check your mail"
+      "title": "Check your {{option}}"
   },
   "selects": {
       "basic": "Basic select",

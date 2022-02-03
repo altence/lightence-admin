@@ -1,25 +1,31 @@
+import { LanguageType, Sex, TwoFactorAuthOption } from '@app/interfaces/interfaces';
+
 export interface UserModel {
   id: number;
   firstName: string;
   lastName: string;
   imgUrl: string;
-  userName: string;
+  nickName: string;
   email: {
-    name: string;
+    value: string;
     verified: boolean;
   };
   phone: {
-    number: string;
+    value: string;
     verified: boolean;
   };
-  sex: 'male' | 'female';
-  birthday: string;
-  lang: 'en' | 'de';
-  country: string;
-  city: string;
+  twoFactorAuth: {
+    enabled: boolean;
+    type: TwoFactorAuthOption;
+  };
+  sex?: Sex;
+  birthday?: string;
+  lang?: LanguageType;
+  country?: string;
+  city?: string;
   address1: string;
   address2?: string;
-  zipcode: number;
+  zipcode?: number;
   website?: string;
   socials?: {
     twitter?: string;

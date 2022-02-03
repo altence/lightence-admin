@@ -103,8 +103,6 @@
       "disable": "Deaktivieren",
       "disabled": "Behindert",
       "disabledCheckbox": "Kontrollkästchen deaktiviert",
-      "enable": "Ermöglichen",
-      "enabled": "Ermöglicht",
       "group": "Checkbox-Gruppe",
       "orange": "Orange",
       "pear": "Birne",
@@ -225,11 +223,15 @@
       "twoFactorAuthPage": "Zwei-Faktor-Authseite",
       "ui": "Komponenten der Benutzeroberfläche",
       "upload": "Hochladen",
-      "verifCodeSent": "Wir haben einen Bestätigungscode an Ihre E-Mail gesendet",
+      "verifCodeSent": "Wir haben einen Bestätigungscode an Ihre {{option}} gesendet",
       "verifyEmailPage": "E-Mail-Seite bestätigen",
       "warning": "Warnung",
       "zipcode": "Postleitzahl",
-      "delete":"Löschen"
+      "delete":"Löschen",
+      "verify": "Verifizieren",
+      "notVerified": "Nicht verifiziert",
+      "enable": "Ermöglichen",
+      "enabled": "Ermöglicht"
   },
   "dashboard": {
       "activity": {
@@ -651,7 +653,6 @@
               "nickname": "Spitzname",
               "notValidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein!",
               "notValidWebsite": "Bitte geben Sie eine gültige URL ein!",
-              "notVerified": "Nicht verifiziert",
               "otherInfo": "Andere Info",
               "sex": "Geschlecht",
               "socialLinks": "Soziale Verbindungen",
@@ -671,7 +672,8 @@
               "samePassword": "Ihr neues Passwort darf nicht mit dem vorherigen Passwort identisch sein",
               "title": "Sicherheitseinstellungen",
               "twoFactorAuth": "Zwei-Faktor-Authentifizierung",
-              "verify": "Verifizieren"
+              "enableTwoFactorAuth": "Möchten Sie die Zwei-Faktor-Authentifizierung wirklich aktivieren?",
+              "disableTwoFactorAuth": "Möchten Sie die Zwei-Faktor-Authentifizierung wirklich deaktivieren?"
           }
       },
       "title": "Profil"
@@ -719,7 +721,7 @@
   },
   "securityCodeForm": {
       "noCode": "Sie haben keinen Bestätigungscode erhalten?",
-      "title": "Prüfe deine Mails"
+      "title": "Prüfe deine {{option}}"
   },
   "selects": {
       "basic": "Grundauswahl",

@@ -1,22 +1,31 @@
 import React from 'react';
 import { FormItemProps } from 'antd';
 import { useTranslation } from 'react-i18next';
-import { Input } from '@app/components/common/inputs/Input/Input';
+import { Input, InputProps } from '@app/components/common/inputs/Input/Input';
 import { BaseButtonsForm } from '@app/components/common/forms/BaseButtonsForm/BaseButtonsForm';
 
 interface EmailItemProps extends FormItemProps {
-  verified?: boolean;
+  isSuccess?: boolean;
+  successText?: string;
   onClick?: () => void;
+  inputProps?: InputProps;
 }
 
-export const EmailItem: React.FC<EmailItemProps> = ({ required, onClick, verified, ...props }) => {
+export const EmailItem: React.FC<EmailItemProps> = ({
+  required,
+  isSuccess,
+  successText,
+  onClick,
+  inputProps,
+  ...props
+}) => {
   const { t } = useTranslation();
 
   return (
     <BaseButtonsForm.Item
       name="email"
-      $isSuccess={verified}
-      $successText={t('profile.nav.personalInfo.verified')}
+      $isSuccess={isSuccess}
+      $successText={successText}
       label={t('common.email')}
       rules={[
         { required, message: t('common.requiredField') },
@@ -27,7 +36,7 @@ export const EmailItem: React.FC<EmailItemProps> = ({ required, onClick, verifie
       ]}
       {...props}
     >
-      <Input disabled={verified} onClick={onClick} />
+      <Input onClick={onClick} {...inputProps} />
     </BaseButtonsForm.Item>
   );
 };
