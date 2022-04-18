@@ -1,9 +1,9 @@
-import { newsTags } from 'constants/newsTags';
-import { ITag } from 'components/common/Tag/Tag';
-import avatar1 from 'assets/avatars/avatar1.png';
-import avatar2 from 'assets/avatars/avatar2.png';
-import avatar3 from 'assets/avatars/avatar3.png';
-import avatar4 from 'assets/avatars/avatar4.png';
+import { newsTags } from '@app/constants/newsTags';
+import { ITag } from '@app/components/common/Tag/Tag';
+import avatar1 from '@app/assets/avatars/avatar1.png';
+import avatar2 from '@app/assets/avatars/avatar2.png';
+import avatar3 from '@app/assets/avatars/avatar3.png';
+import avatar4 from '@app/assets/avatars/avatar4.png';
 
 export interface Post {
   avatarUrl: string;

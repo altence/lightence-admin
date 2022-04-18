@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useResponsive } from 'hooks/useResponsive';
+import { useResponsive } from '@app/hooks/useResponsive';
 import * as S from './BloodScreeningTable.styles';
 import { BloodTestResult, flags, results } from '@app/constants/bloodTestResults';
 import { ColumnsType } from 'antd/es/table';

@@ -36,6 +36,7 @@ declare namespace ReactTrello {
     title: string;
     description?: string;
     label?: string;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     metadata?: any;
   }
 

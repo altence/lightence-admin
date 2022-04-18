@@ -2,8 +2,8 @@ import React, { useMemo } from 'react';
 import { List } from 'antd';
 import { HashLink } from 'react-router-hash-link';
 import { useTranslation } from 'react-i18next';
-import { CategoryComponents } from 'components/header/HeaderSearch/HeaderSearch';
-import { camelize } from 'utils/utils';
+import { CategoryComponents } from '@app/components/header/HeaderSearch/HeaderSearch';
+import { camelize } from '@app/utils/utils';
 import * as S from './SearchResults.styles';
 
 interface SearchResultsProps {

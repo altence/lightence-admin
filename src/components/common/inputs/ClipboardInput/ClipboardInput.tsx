@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { CopyOutlined } from '@ant-design/icons';
 import { SuffixInput } from '../SuffixInput/SuffixInput';
 import { InputProps } from '../Input/Input';
-import { notificationController } from 'controllers/notificationController';
+import { notificationController } from '@app/controllers/notificationController';
 
 interface ClipboardInputProps extends InputProps {
   valueToCopy?: string;

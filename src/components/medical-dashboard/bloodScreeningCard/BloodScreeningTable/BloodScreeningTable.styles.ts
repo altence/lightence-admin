@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Table as CommonTable } from 'components/common/Table/Table';
+import { Table as CommonTable } from '@app/components/common/Table/Table';
 
 interface TextProps {
   $isActive?: boolean;

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { SearchOutlined } from '@ant-design/icons';
-import { Modal } from 'components/common/Modal/Modal';
-import { Button } from 'components/common/buttons/Button/Button';
-import { SearchInput } from 'components/common/inputs/SearchInput/SearchInput';
+import { Modal } from '@app/components/common/Modal/Modal';
+import { Button } from '@app/components/common/buttons/Button/Button';
+import { SearchInput } from '@app/components/common/inputs/SearchInput/SearchInput';
 
 export const SearchIcon = styled(SearchOutlined)`
   &.anticon.anticon-search {

@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { FilterIcon } from 'components/common/icons/FilterIcon';
+import { FilterIcon } from '@app/components/common/icons/FilterIcon';
 import { SearchOverlay } from './searchOverlay/SearchOverlay/SearchOverlay';
 import { Dropdown } from 'antd';
 import { DropdownHeader } from '@app/components/header/Header/Header.styles';
-import { CategoryComponents } from 'components/header/HeaderSearch/HeaderSearch';
+import { CategoryComponents } from '@app/components/header/HeaderSearch/HeaderSearch';
 import { Btn, InputSearch } from '../../HeaderSearch/HeaderSearch.styles';
 import { useTranslation } from 'react-i18next';
 

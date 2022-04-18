@@ -1,7 +1,7 @@
 import React from 'react';
 import { Space } from 'antd';
 import { CaretDownOutlined, CaretUpOutlined } from '@ant-design/icons';
-import { getDifference } from 'utils/utils';
+import { getDifference } from '@app/utils/utils';
 import * as S from './StatisticsInfo.styles';
 
 interface StatisticsInfoProps {

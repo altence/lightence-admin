@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { PieChartCustomLegend } from '../../common/charts/PieChartCustomLegend';
-import { healthChartData } from 'constants/healthChartData';
+import { healthChartData } from '@app/constants/healthChartData';
 import { Card } from '@app/components/common/Card/Card';
 
 export const HealthCard: React.FC = () => {

@@ -2,13 +2,13 @@ import React, { useMemo } from 'react';
 import { Avatar } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { ColumnType } from 'antd/lib/table';
-import { Dates } from 'constants/Dates';
+import { Dates } from '@app/constants/Dates';
 import { Status } from '../Status/Status';
-import { paymentStatuses, PaymentStatus } from 'constants/paymentStatuses';
-import { defineColorByPriority, getCurrencyPrice } from 'utils/utils';
-import { Payment } from 'api/paymentHistory.api';
+import { paymentStatuses, PaymentStatus } from '@app/constants/paymentStatuses';
+import { defineColorByPriority, getCurrencyPrice } from '@app/utils/utils';
+import { Payment } from '@app/api/paymentHistory.api';
 import * as S from './PaymentsTable.styles';
-import { Button } from 'components/common/buttons/Button/Button';
+import { Button } from '@app/components/common/buttons/Button/Button';
 import { useTheme } from 'styled-components';
 
 interface Recipient {

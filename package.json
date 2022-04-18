@@ -10,6 +10,18 @@
   "bugs": {
     "url": "https://github.com/altence/lightence-admin/issues"
   },
+  "scripts": {
+    "dev": "yarn buildThemes && vite",
+    "build": "yarn buildThemes && tsc && vite build",
+    "preview": "yarn buildThemes && vite preview",
+    "lint": "eslint \"*/**/*.{js,ts,tsx}\" --fix",
+    "lint:styles": "stylelint '*/**/*.{js,ts,tsx}'",
+    "prepare": "husky install",
+    "postinstall": "patch-package",
+    "buildLightTheme": "lessc --js --clean-css=\"--s1 --advanced\" src/styles/themes/light/main-light.less public/themes/main-light.css",
+    "buildDarkTheme": "lessc --js --clean-css=\"--s1 --advanced\" src/styles/themes/dark/main-dark.less public/themes/main-dark.css",
+    "buildThemes": "yarn buildLightTheme && yarn buildDarkTheme"
+  },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
     "@craco/craco": "^6.1.2",
@@ -18,6 +30,7 @@
     "antd-mask-input": "^0.1.15",
     "axios": "^0.24.0",
     "axios-mock-adapter": "^1.20.0",
+    "consola": "^2.15.3",
     "country-list": "^2.2.0",
     "dayjs": "^1.10.6",
     "echarts": "^5.1.2",
@@ -52,7 +65,6 @@
     "styled-components": "^5.3.0",
     "typeface-lato": "^1.1.13",
     "typeface-montserrat": "^1.1.13",
-    "typescript": "^4.1.2",
     "uuid": "^8.3.2",
     "web-vitals": "^1.0.1",
     "workbox-background-sync": "^5.1.3",
@@ -68,25 +80,6 @@
     "workbox-strategies": "^5.1.3",
     "workbox-streams": "^5.1.3"
   },
-  "scripts": {
-    "start": "yarn buildThemes && craco start",
-    "build": "yarn buildThemes && craco build",
-    "test": "craco test",
-    "eject": "craco eject",
-    "lint": "eslint \"*/**/*.{js,ts,tsx}\" --fix",
-    "lint:styles": "stylelint '*/**/*.{js,ts,tsx}'",
-    "prepare": "husky install",
-    "postinstall": "patch-package",
-    "buildLightTheme": "lessc --js --clean-css=\"--s1 --advanced\" src/styles/themes/light/main-light.less public/themes/main-light.css",
-    "buildDarkTheme": "lessc --js --clean-css=\"--s1 --advanced\" src/styles/themes/dark/main-dark.less public/themes/main-dark.css",
-    "buildThemes": "yarn buildLightTheme && yarn buildDarkTheme"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not op_mini all",
-    "not IE 11"
-  ],
   "devDependencies": {
     "@types/country-list": "^2.1.0",
     "@types/google-map-react": "^2.1.3",
@@ -104,7 +97,7 @@
     "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.8.0",
-    "craco-alias": "^3.0.1",
+    "@vitejs/plugin-react": "^1.3.0",
     "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
@@ -119,9 +112,18 @@
     "stylelint-config-recommended": "^5.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.10.0",
-    "webpack-bundle-analyzer": "^4.4.2",
-    "webpackbar": "^5.0.0-3"
+    "typescript": "^4.6.3",
+    "vite": "^2.9.2",
+    "vite-plugin-env-compatible": "^1.1.1",
+    "vite-plugin-pwa": "^0.11.13",
+    "vite-plugin-svgr": "^1.1.0"
   },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all",
+    "not IE 11"
+  ],
   "lint-staged": {
     "*/**/*.{js,ts,tsx}": "yarn lint"
   },

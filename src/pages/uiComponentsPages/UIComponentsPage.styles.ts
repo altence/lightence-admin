@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Card as CommonCard } from 'components/common/Card/Card';
-import { Collapse } from 'components/common/Collapse/Collapse';
+import { Card as CommonCard } from '@app/components/common/Card/Card';
+import { Collapse } from '@app/components/common/Collapse/Collapse';
 
 export const Card = styled(CommonCard)`
   width: 100%;

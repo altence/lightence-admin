@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Option, Select, SelectProps } from '../Select/Select';
-import { getStatistics, Statistic } from 'api/statistics.api';
-import { statistics as configStatistics } from 'constants/config/statistics';
+import { getStatistics, Statistic } from '@app/api/statistics.api';
+import { statistics as configStatistics } from '@app/constants/config/statistics';
 
 export const StatisticsSelect: React.FC<SelectProps> = ({ className, ...props }) => {
   const [statistics, setStatistics] = useState<Statistic[]>([]);

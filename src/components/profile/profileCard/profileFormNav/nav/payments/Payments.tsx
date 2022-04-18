@@ -2,8 +2,8 @@ import React, { useMemo } from 'react';
 import { Col, Row } from 'antd';
 import { PaymentHistory } from './paymentHistory/PaymentHistory/PaymentHistory';
 import { PaymentMethod } from './paymentMethod/PaymentMethod';
-import { Card } from 'components/common/Card/Card';
-import { useResponsive } from 'hooks/useResponsive';
+import { Card } from '@app/components/common/Card/Card';
+import { useResponsive } from '@app/hooks/useResponsive';
 
 export const Payments: React.FC = () => {
   const { isTablet } = useResponsive();

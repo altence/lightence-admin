@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Col, Row } from 'antd';
 import { TwitterOutlined } from '@ant-design/icons';
 import { BaseButtonsForm } from '@app/components/common/forms/BaseButtonsForm/BaseButtonsForm';
-import { ClipboardInput } from 'components/common/inputs/ClipboardInput/ClipboardInput';
+import { ClipboardInput } from '@app/components/common/inputs/ClipboardInput/ClipboardInput';
 import { OpenURLInput } from '@app/components/common/inputs/OpenURLInput/OpenURLInput';
 import { LinkedinIcon } from '@app/components/common/icons/LinkedinIcon';
 import { FacebookIcon } from '@app/components/common/icons/FacebookIcon';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from '../../../common/Card/Card';
-import notFoundImg from 'assets/images/nothing-found.png';
+import notFoundImg from '@app/assets/images/nothing-found.png';
 import { useTranslation } from 'react-i18next';
 import * as S from './TreatmentNotFound.styles';
 

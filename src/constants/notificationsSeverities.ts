@@ -1,4 +1,4 @@
-import { NotificationType } from 'components/common/Notification/Notification';
+import { NotificationType } from '@app/components/common/Notification/Notification';
 
 interface NotificationSeverity {
   id: number;

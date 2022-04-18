@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Col, Space } from 'antd';
 import { CaretDownOutlined, CaretUpOutlined } from '@ant-design/icons';
-import { useResponsive } from 'hooks/useResponsive';
-import { getDifference } from 'utils/utils';
+import { useResponsive } from '@app/hooks/useResponsive';
+import { getDifference } from '@app/utils/utils';
 import * as S from './ScreeningsFriend.styles';
 
 interface ScreeningsFriendProps {

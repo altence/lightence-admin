@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Col, Row } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { LeftOutlined } from '@ant-design/icons';
-import { useResponsive } from 'hooks/useResponsive';
+import { useResponsive } from '@app/hooks/useResponsive';
 import { ScreeningsProps } from '../interfaces';
 import * as S from './DesktopScreenings.styles';
 

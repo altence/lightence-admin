@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image } from 'antd';
 import { useTranslation } from 'react-i18next';
-import notFoundImg from 'assets/images/nothing-found.png';
+import notFoundImg from '@app/assets/images/nothing-found.png';
 import * as S from './NotFound.styles';
 
 export const NotFound: React.FC = () => {

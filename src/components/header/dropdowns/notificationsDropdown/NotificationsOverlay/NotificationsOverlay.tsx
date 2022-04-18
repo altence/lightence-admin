@@ -3,10 +3,10 @@ import { Trans } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 import { Col, Row, Space } from 'antd';
 import { Link } from 'react-router-dom';
-import { Notification } from 'components/common/Notification/Notification';
-import { capitalize } from 'utils/utils';
-import { Mention, Notification as NotificationType } from 'api/notifications.api';
-import { notificationsSeverities } from 'constants/notificationsSeverities';
+import { Notification } from '@app/components/common/Notification/Notification';
+import { capitalize } from '@app/utils/utils';
+import { Mention, Notification as NotificationType } from '@app/api/notifications.api';
+import { notificationsSeverities } from '@app/constants/notificationsSeverities';
 import * as S from './NotificationsOverlay.styles';
 
 interface NotificationsOverlayProps {

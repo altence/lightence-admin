@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, CardProps } from 'components/common/Card/Card';
-import { useResponsive } from 'hooks/useResponsive';
+import { Card, CardProps } from '@app/components/common/Card/Card';
+import { useResponsive } from '@app/hooks/useResponsive';
 
 interface DashboardPaddings {
   xs: [number, number];

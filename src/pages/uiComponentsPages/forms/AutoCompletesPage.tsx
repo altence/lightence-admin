@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Col } from 'antd';
-import { AutoComplete } from 'components/common/AutoComplete/AutoComplete';
-import { SearchInput as CommonSearchInput } from 'components/common/inputs/SearchInput/SearchInput';
-import { Option } from 'components/common/selects/Select/Select';
+import { AutoComplete } from '@app/components/common/AutoComplete/AutoComplete';
+import { SearchInput as CommonSearchInput } from '@app/components/common/inputs/SearchInput/SearchInput';
+import { Option } from '@app/components/common/selects/Select/Select';
 import { UserOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';

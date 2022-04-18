@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { Col, Row, Space, TablePaginationConfig } from 'antd';
-import { BasicTableRow, getBasicTableData, Pagination, Tag } from 'api/table.api';
-import { Table } from 'components/common/Table/Table';
+import { BasicTableRow, getBasicTableData, Pagination, Tag } from '@app/api/table.api';
+import { Table } from '@app/components/common/Table/Table';
 import { ColumnsType } from 'antd/es/table';
-import { Button } from 'components/common/buttons/Button/Button';
+import { Button } from '@app/components/common/buttons/Button/Button';
 import { useTranslation } from 'react-i18next';
 import { defineColorByPriority } from '@app/utils/utils';
-import { notificationController } from 'controllers/notificationController';
+import { notificationController } from '@app/controllers/notificationController';
 import { Status } from '@app/components/profile/profileCard/profileFormNav/nav/payments/paymentHistory/Status/Status';
 import { useMounted } from '@app/hooks/useMounted';
 import { useTheme } from 'styled-components';

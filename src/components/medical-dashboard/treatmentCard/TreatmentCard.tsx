@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useResponsive } from 'hooks/useResponsive';
+import { useResponsive } from '@app/hooks/useResponsive';
 import { TreatmentCalendar } from './TreatmentCalendar/TreatmentCalendar';
 import { TreatmentPanel } from './TreatmentPanel';
-import { AppDate, Dates } from 'constants/Dates';
+import { AppDate, Dates } from '@app/constants/Dates';
 import { Col, Row } from 'antd';
 import { DashboardCard } from '../DashboardCard/DashboardCard';
-import { CalendarEvent, getUserCalendar } from 'api/calendar.api';
+import { CalendarEvent, getUserCalendar } from '@app/api/calendar.api';
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import styled from 'styled-components';
 import { Button } from '../../common/buttons/Button/Button';

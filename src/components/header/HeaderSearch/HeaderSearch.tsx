@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router';
 import { SearchDropdown } from '../dropdowns/searchDropdown/SearchDropdown';
-import { useResponsive } from 'hooks/useResponsive';
+import { useResponsive } from '@app/hooks/useResponsive';
 import { components as configComponents, Component } from '@app/constants/config/components';
-import { categoriesList, CategoryType } from 'constants/categoriesList';
+import { categoriesList, CategoryType } from '@app/constants/categoriesList';
 import * as S from './HeaderSearch.styles';
 import { Button } from '@app/components/common/buttons/Button/Button';
 

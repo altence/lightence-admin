@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card } from 'components/common/Card/Card';
-import { BaseChart } from 'components/common/charts/BaseChart';
+import { Card } from '@app/components/common/Card/Card';
+import { BaseChart } from '@app/components/common/charts/BaseChart';
 import { useTranslation } from 'react-i18next';
 
 const data = [

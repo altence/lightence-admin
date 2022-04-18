@@ -3,7 +3,7 @@ import { EChartsInstance } from 'echarts-for-react';
 import { ThemeContext } from 'styled-components';
 import { BaseChart } from '../../../common/charts/BaseChart';
 import { Dates } from '@app/constants/Dates';
-import { useResponsive } from 'hooks/useResponsive';
+import { useResponsive } from '@app/hooks/useResponsive';
 
 interface BloodScreeningChartsProps {
   data: number[];

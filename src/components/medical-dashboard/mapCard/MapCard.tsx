@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { DashboardCard } from '../DashboardCard/DashboardCard';
 import { DoctorsMap } from './DoctorsMap/DoctorsMap';
-import { Doctor, getDoctorsData } from 'api/doctors.api';
+import { Doctor, getDoctorsData } from '@app/api/doctors.api';
 import { useTheme } from 'styled-components';
 
 export const MapCard: React.FC = () => {

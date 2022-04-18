@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'antd';
-import { Card } from 'components/common/Card/Card';
+import { Card } from '@app/components/common/Card/Card';
 import { PasswordForm } from './passwordForm/PasswordForm/PasswordForm';
 import { TwoFactorAuth } from './twoFactorAuth/TwoFactorAuth';
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Divider, Row, Typography } from 'antd';
 import { DropdownMenu } from '@app/components/header/Header/Header.styles';
-import { Button } from 'components/common/buttons/Button/Button';
+import { Button } from '@app/components/common/buttons/Button/Button';
 
 export const MenuRow = styled(Row).withConfig({
   shouldForwardProp: (prop) => !['eventKey', 'warnKey'].includes(prop),

@@ -4,7 +4,7 @@ import { SuffixInput } from '../SuffixInput/SuffixInput';
 import { useTranslation } from 'react-i18next';
 import { FileTextOutlined } from '@ant-design/icons';
 import { InputProps } from '../Input/Input';
-import { websitePattern } from 'constants/patterns';
+import { websitePattern } from '@app/constants/patterns';
 import { Button } from '@app/components/common/buttons/Button/Button';
 
 interface OpenURLInputProps extends InputProps {

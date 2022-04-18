@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lightence Admin</title>
+    <meta name="description" content="Free and easy-to-use admin template based on React 17+" />
+    <meta name="keywords" content="altence lightence admin template react redux responsive free" />
+    <meta itemprop="title" content="Lightence Admin Panel" />
+    <meta itemprop="description" content="Free and easy-to-use admin template based on React 17+" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="/favicon.ico" type="image/png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="mask-icon" href="/favicon.svg" color="#000000" />
+    <meta name="theme-color" content="#000000" />
+    <noscript id="inject-styles-here"></noscript>
+    <style>
+      body {
+        margin: 0;
+      }
+      #initSpinner {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        background: #2d2c3e;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="initSpinner">
+      <img src="/spinners/spinner.svg" alt="Loading..." />
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

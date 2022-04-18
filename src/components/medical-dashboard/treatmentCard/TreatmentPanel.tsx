@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { CalendarEvent } from 'api/calendar.api';
-import { getDoctorsData, Doctor } from 'api/doctors.api';
+import { CalendarEvent } from '@app/api/calendar.api';
+import { getDoctorsData, Doctor } from '@app/api/doctors.api';
 import { TreatmentDoctor } from './TreatmentDoctor/TreatmentDoctor';
 import { specifities } from '../../../constants/specifities';
 import { TreatmentNotFound } from './TreatmentNotFound/TreatmentNotFound';

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Typography } from 'antd';
-import { hexToRGB } from 'utils/utils';
+import { hexToRGB } from '@app/utils/utils';
 
 export const Header = styled.div`
   padding: 1.5rem 3.5rem;

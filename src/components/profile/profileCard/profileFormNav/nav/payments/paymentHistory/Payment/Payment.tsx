@@ -1,12 +1,12 @@
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Avatar } from 'antd';
-import { defineColorByPriority, getCurrencyPrice } from 'utils/utils';
-import { paymentStatuses } from 'constants/paymentStatuses';
-import { Dates } from 'constants/Dates';
+import { defineColorByPriority, getCurrencyPrice } from '@app/utils/utils';
+import { paymentStatuses } from '@app/constants/paymentStatuses';
+import { Dates } from '@app/constants/Dates';
 import { Status } from '../Status/Status';
 import * as S from './Payment.styles';
-import { Button } from 'components/common/buttons/Button/Button';
+import { Button } from '@app/components/common/buttons/Button/Button';
 import { useTheme } from 'styled-components';
 import { CurrencyType } from '@app/interfaces/interfaces';
 

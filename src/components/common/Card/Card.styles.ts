@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Card as AntCard } from 'antd';
-import { normalizeProp } from 'utils/utils';
+import { normalizeProp } from '@app/utils/utils';
 import { ThemeType } from '@app/interfaces/interfaces';
 
 interface CardInternalProps {

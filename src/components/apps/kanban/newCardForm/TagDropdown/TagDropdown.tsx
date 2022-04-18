@@ -2,9 +2,9 @@ import React from 'react';
 import { Dropdown } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { Tag as ITag } from '../../interfaces';
-import { kanbanTags } from 'constants/kanbanTags';
+import { kanbanTags } from '@app/constants/kanbanTags';
 import * as S from './TagDropdown.styles';
-import { Tag } from 'components/common/Tag/Tag';
+import { Tag } from '@app/components/common/Tag/Tag';
 import { PlusCircleFilled } from '@ant-design/icons';
 import { useTheme } from 'styled-components';
 

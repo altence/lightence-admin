@@ -1,4 +1,4 @@
-import { Dates } from 'constants/Dates';
+import { Dates } from '@app/constants/Dates';
 
 export interface CalendarEvent {
   date: number;

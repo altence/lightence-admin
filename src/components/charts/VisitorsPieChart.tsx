@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'components/common/Card/Card';
+import { Card } from '@app/components/common/Card/Card';
 import { useTranslation } from 'react-i18next';
 import { PieChart } from '../common/charts/PieChart';
 

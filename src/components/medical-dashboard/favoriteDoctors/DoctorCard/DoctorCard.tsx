@@ -1,8 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { specifities } from 'constants/specifities';
+import { specifities } from '@app/constants/specifities';
 import { Col, Image, Row } from 'antd';
-import { Dates } from 'constants/Dates';
+import { Dates } from '@app/constants/Dates';
 import * as S from './DoctorCard.styles';
 
 interface DoctorCardProps {

@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Popconfirm, Form, TablePaginationConfig, Space } from 'antd';
-import { Table } from 'components/common/Table/Table';
-import { getEditableTableData, BasicTableRow, Pagination } from 'api/table.api';
+import { Table } from '@app/components/common/Table/Table';
+import { getEditableTableData, BasicTableRow, Pagination } from '@app/api/table.api';
 import { EditableCell } from './EditableCell';
-import { Button } from 'components/common/buttons/Button/Button';
+import { Button } from '@app/components/common/buttons/Button/Button';
 import { useTranslation } from 'react-i18next';
 import { useMounted } from '@app/hooks/useMounted';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Avatar } from 'antd';
 import { useTranslation } from 'react-i18next';
 import * as S from './DoctorProfile.styles';
-import { specifities } from 'constants/specifities';
+import { specifities } from '@app/constants/specifities';
 import { UserOutlined } from '@ant-design/icons';
 
 interface DoctorProfileProps {

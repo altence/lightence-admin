@@ -1,10 +1,10 @@
-import cameron from 'assets/images/doctors/cameron-bell.png';
-import annabella from 'assets/images/doctors/annabella-morton.png';
+import cameron from '@app/assets/images/doctors/cameron-bell.png';
+import annabella from '@app/assets/images/doctors/annabella-morton.png';
 import francisco from '@app/assets/images/doctors/francisco-venancio.png';
-import james from 'assets/images/doctors/james-moss.png';
-import sara from 'assets/images/doctors/sara-mills.png';
-import jorden from 'assets/images/doctors/jorden-cannon.png';
-import kayden from 'assets/images/doctors/kayden-hunter.png';
+import james from '@app/assets/images/doctors/james-moss.png';
+import sara from '@app/assets/images/doctors/sara-mills.png';
+import jorden from '@app/assets/images/doctors/jorden-cannon.png';
+import kayden from '@app/assets/images/doctors/kayden-hunter.png';
 import steve from '@app/assets/images/doctors/steve.jpeg';
 
 export interface Doctor {

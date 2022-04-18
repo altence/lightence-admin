@@ -2,7 +2,7 @@ import React from 'react';
 import { Dropdown } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { Participant as IParticipant } from '../../interfaces';
-import { kanbanPeople } from 'constants/kanbanPeople';
+import { kanbanPeople } from '@app/constants/kanbanPeople';
 import StubAvatar from '../../../../../assets/images/stub-avatar.png';
 import * as S from './ParticipantsDropdown.styles';
 

@@ -1,5 +1,5 @@
-import avatar1 from 'assets/avatars/avatar1.png';
-import avatar2 from 'assets/avatars/avatar2.png';
+import avatar1 from '@app/assets/avatars/avatar1.png';
+import avatar2 from '@app/assets/avatars/avatar2.png';
 
 export const kanbanPeople = {
   anna: {
