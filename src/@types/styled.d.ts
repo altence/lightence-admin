@@ -3,6 +3,7 @@ import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
+    name: string;
     commonColors: {
       white: string;
       black: string;
@@ -27,12 +28,13 @@ declare module 'styled-components' {
         warning: string;
         success: string;
         spinnerBase: string;
-        angularGradient: string;
         mainBackground: string;
         secondaryBackground: string;
+        additionalBackground: string;
+        timelineBackground: string;
         chartPrimaryGradient: LinearGradientObject;
         chartSecondaryGradient: LinearGradientObject;
-        chartAdditionalGradient: LinearGradientObject;
+        chartSecondaryGradientSpecular: LinearGradientObject;
       };
       text: {
         main: string;
@@ -40,17 +42,20 @@ declare module 'styled-components' {
         superLight: string;
         secondary: string;
         dark: string;
+        nftLight: string;
+        siderPrimary: string;
+        siderSecondary: string;
       };
       border: {
         main: string;
+        nft: string;
+      };
+      sider: {
+        background: string;
       };
       dashboardMap: {
         background: string;
-        dotsColor: string;
-        dotsHoveredColor: string;
-        markerBorderColor: string;
-        controlColor: string;
-        controlBackgroundColor: string;
+        circleColor: string;
         controlDisabledBackgroundColor: string;
       };
       charts: {
@@ -75,6 +80,9 @@ declare module 'styled-components' {
         warning: string;
         error: string;
       };
+      scroll: {
+        main: string;
+      };
     };
     border: {
       radius: string;
@@ -82,6 +90,8 @@ declare module 'styled-components' {
     boxShadow: {
       main: string;
       hover: string;
+      nftMain: string;
+      nftSecondary: string;
     };
     breakpoints: {
       xs: number;
@@ -109,6 +119,10 @@ declare module 'styled-components' {
       paddingVertical: string;
       paddingHorizontal: string;
       headerHeight: string;
+    };
+    fonts: {
+      main: string;
+      secondary: string;
     };
     commonFontSizes: {
       xxs: string;

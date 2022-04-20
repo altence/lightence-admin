@@ -4,9 +4,13 @@ import { BurgerIcon } from '@app/components/common/Burger/BurgerIcon';
 import { GitHubButton } from '@app/components/header/GitHubButton';
 
 export const DropdownMenu = styled(Menu)`
-  box-shadow: ${(props) => props.theme.boxShadow.main};
-  border-radius: ${(props) => props.theme.border.radius};
   line-height: 1.5715;
+
+  border-radius: ${(props) => props.theme.border.radius};
+
+  &.ant-dropdown-menu {
+    box-shadow: ${(props) => props.theme.boxShadow.main};
+  }
 `;
 
 export const DropdownHeader = styled.div`
@@ -74,7 +78,7 @@ export const ProfileColumn = styled(Col)<ProfileColumn>`
     ${(props) =>
       props?.$isTwoColumnsLayout &&
       css`
-        background-color: ${(props) => props.theme.colors.main.mainBackground};
+        background-color: ${(props) => props.theme.colors.sider.background};
         padding: ${(props) =>
           `${props.theme.desktopLayout.paddingVertical} ${props.theme.desktopLayout.paddingHorizontal}`};
       `}

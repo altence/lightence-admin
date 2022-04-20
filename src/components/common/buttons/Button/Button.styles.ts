@@ -11,12 +11,17 @@ interface BtnProps {
 }
 
 export const Button = styled(AntButton)<BtnProps>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+
   ${(props) =>
     props.$noStyle &&
     css`
-      width: unset;
-      padding: 0;
-      height: unset;
+      width: unset !important;
+      padding: 0 !important;
+      height: unset !important;
     `}
 
   ${(props) =>
@@ -69,8 +74,13 @@ export const Button = styled(AntButton)<BtnProps>`
 
       ${props.type === 'primary' &&
       css`
+        background: ${(props) => props.theme.colors.main.primaryGradient};
+
         &:hover {
-          background: ${props.theme.colors.main.secondary};
+          background: linear-gradient(
+            ${props.theme.colors.main.secondary} 100%,
+            ${props.theme.colors.main.secondary} 100%
+          );
 
           border-color: ${props.theme.colors.main.secondary};
         }
